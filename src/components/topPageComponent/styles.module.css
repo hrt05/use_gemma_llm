@@ -1,0 +1,132 @@
+/* styles.module.css */
+
+/* --- 既存スタイルの下に追加 --- */
+
+.responseCard {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.promptEcho {
+  font-size: 13px;
+  color: #6b7280;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.responseBody p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #111827;
+  margin: 0 0 0.75rem;
+}
+
+.responseBody ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.responseBody li {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #111827;
+  padding: 0.4rem 0 0.4rem 1.25rem;
+  position: relative;
+  border-top: 1px solid #f3f4f6;
+}
+
+.responseBody li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #9ca3af;
+}
+
+.responseBody strong {
+  font-weight: 600;
+  color: #111827;
+}
+
+.supplement {
+  font-size: 13px;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+
+  /* --- h1 --- */
+.pageTitle {
+    font-size: 22px;
+    font-weight: 500;
+    color: #111827;
+    margin: 0 0 0.25rem;
+  }
+  
+/* --- 説明文 p --- */
+.pageDesc {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0 0 1.25rem;
+}
+
+/* --- input と button を横並びにするラッパー --- */
+.inputRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* --- input --- */
+.promptInput {
+  flex: 1;
+  height: 40px;
+  padding: 0 12px;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #111827;
+  transition: border-color 0.15s;
+}
+
+.promptInput:focus {
+  border-color: #6b7280;
+  box-shadow: 0 0 0 3px rgba(107, 114, 128, 0.12);
+}
+
+/* --- button --- */
+.submitBtn {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 500;
+  background: #111827;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.submitBtn:hover {
+  background: #374151;
+}
+
+.submitBtn:active {
+  transform: scale(0.97);
+}
